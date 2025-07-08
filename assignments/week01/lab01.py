@@ -17,7 +17,7 @@ hobby = input("What is your Favorite hobby ? :")
 
 print("==Your profile==")
 print("Full name:", +Full_name)
-print("Age:", age)
+print("Age:", Age)
 print("Email:", Email)
 print("Phone number:", Phone_number)
 print("Favorite hobby:", hobby)
