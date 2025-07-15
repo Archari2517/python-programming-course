@@ -79,6 +79,7 @@ print("=" * 50)
 print("DEMO 3: Operator Precedence")
 print("=" * 50)
 
+
 # ตัวอย่างลำดับการคำนวณ
 expression1 = "2 + 3 * 4"
 result1 = 2 + 3 * 4
@@ -94,7 +95,7 @@ print("Explanation: Parentheses have highest precedence")
 print("So: (2 + 3) * 4 = 5 * 4 = 20")
 print()
 
-expression3 = "2 ** 3 * 4"
+expression3 = "2 ** 3 * 4"# ยกกำลังสำคัญสุด
 result3 = 2 ** 3 * 4
 print(f"{expression3} = {result3}")
 print("Explanation: ** has higher precedence than *")
@@ -119,24 +120,26 @@ print("=" * 50)
 # ตัวอย่างที่ 1: คำนวณพื้นที่และปริมตรสี่เหลี่ยม
 print("Rectangle Calculator")
 print("-" * 20)
+#รับค่า
 length = float(input("Enter rectangle length: "))
 width = float(input("Enter rectangle width: "))
-
+#คำนวน
 area = length * width
 perimeter = 2 * (length + width)
-
+#แสดงผล
 print(f"Area = length * width = {length} * {width} = {area}")
 print(f"Perimeter = 2 * (length + width) = 2 * ({length} + {width}) = {perimeter}")
 print()
 
 # ตัวอย่างที่ 2: แปลงหน่วยอุณหภูมิ
+#รับค่า
 print("Temperature Converter")
 print("-" * 25)
 celsius = float(input("Enter temperature in Celsius: "))
-
+#คำนวน
 fahrenheit = (celsius * 9/5) + 32
 kelvin = celsius + 273.15
-
+#แสดงผล
 print(f"Celsius: {celsius}°C")
 print(f"Fahrenheit: (celsius * 9/5) + 32 = ({celsius} * 9/5) + 32 = {fahrenheit}°F")
 print(f"Kelvin: celsius + 273.15 = {celsius} + 273.15 = {kelvin}K")
@@ -181,7 +184,7 @@ print(f"{dividend} / {divisor} = {regular_div}")
 print("Result: Float number (decimal)")
 print()
 
-# Floor division (//)
+# Floor division (//) หารจำนวนเจต็ม(ไม่เอาเศษ)
 floor_div = dividend // divisor
 print(f"Floor division (//):")
 print(f"{dividend} // {divisor} = {floor_div}")
@@ -221,11 +224,11 @@ print("2 + 3 * 4 =", 2 + 3 * 4, "(not 20!)")
 print("(2 + 3) * 4 =", (2 + 3) * 4, "(use parentheses)")
 print()
 
-# Mistake 3: Division by zero
+# Mistake 3: Division by zero ดักจับข้อผิดพลาด
 print("Division by zero:")
-try:
+try:# ลองทำอันนี้ดู
     result = 10 / 0
-except ZeroDivisionError:
+except ZeroDivisionError:# ถ้าerrorทำอันนี้
     print("10 / 0 = Error! Cannot divide by zero")
 print()
 
