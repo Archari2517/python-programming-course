@@ -1,9 +1,9 @@
-# Multiple conditions with logical operators
+# Multiple conditions with logical operators ตัวกระทำการเชิงเปรียบเทียบ
 username = "admin"
 password = "12345"
 is_active = True
 
-if username == "admin" and password == "12345" and is_active:
+if username == "admin" and password == "12345" and is_active:#เปรียบเทียบก่อน 
     print("Access granted")
 elif username == "admin" and password == "12345" and not is_active:
     print("Account is deactivated")
@@ -17,7 +17,7 @@ if day == "Saturday" or day == "Sunday":
 else:
     print("It's a weekday")
 
-# Nested if statements
+# Nested if statements ตรวจสอบ 2 ประเด็น 1.สภาพอากาศ 2.อุณหภูมิ
 weather = "sunny"
 temperature = 28
 
