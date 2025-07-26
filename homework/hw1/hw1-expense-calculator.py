@@ -48,13 +48,20 @@ while True:
     if emergency_percent < 0: 
         print("Percentage to save for emergency can't less than 0\n") 
         continue
+    elif emergency_percent > 100: 
+        print("Percentage can't more than 0\n") 
+        continue
     else:
         break
+    
 
 while True:
     investment_percent=float(input("User's Percentage to invest (e.g., 15.0) :")) #เงินลงทุน%
     if investment_percent < 0: 
         print("Percentage to invest can't less than 0\n") 
+        continue
+    elif investment_percent > 100: 
+        print("Percentage to invest can't more than 0\n") 
         continue
     else:
         break
