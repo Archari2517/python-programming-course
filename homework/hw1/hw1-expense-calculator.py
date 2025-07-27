@@ -2,7 +2,7 @@
 """
 Personal Finance Calculator
 Student: [Archari Khemthong]
-Date: [Today's Date]
+Date: [26/july/2025]
 Purpose: Calculate monthly budget and savings
 """
 #2. ขอข้อมูลจากผู้ใช้ในประเด็นรายได้ (income) และค่าใช้จ่าย (expense) ดังนี้
