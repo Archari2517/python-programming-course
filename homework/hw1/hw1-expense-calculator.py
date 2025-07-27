@@ -38,7 +38,7 @@ while True:
 while True:
     entertainment=int(input("User's Monthly entertainment budget in THB :")) #ค่าพักผ่อน
     if entertainment < 0: 
-        print("Monthly entertainment budget can't less than 100\n") 
+        print("Monthly entertainment budget can't less than 0\n") 
         continue
     else:
         break
@@ -61,7 +61,7 @@ while True:
         print("Percentage to invest can't less than 0\n") 
         continue
     elif investment_percent > 100: 
-        print("Percentage to invest can't more than 0\n") 
+        print("Percentage to invest can't more than 100\n") 
         continue
     else:
         break
