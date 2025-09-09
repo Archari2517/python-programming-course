@@ -1,10 +1,10 @@
 class Car:
-    # Class attribute (shared by all instances)
+    # Class attribute (shared by all instances)การประกาศตัวแปรในคลาส ติดอยู่ในclassตลอด
     wheels = 4
     vehicle_type = "Car"
     
     def __init__(self, brand, model, year):
-        # Instance attributes (unique to each instance)
+        # Instance attributes (unique to each instance) ของใครของมัน
         self.brand = brand
         self.model = model
         self.year = year
@@ -19,8 +19,8 @@ class Car:
         """Method to get car information"""
         return f"{self.year} {self.brand} {self.model} - Mileage: {self.mileage} km"
     
-    @classmethod
-    def get_vehicle_type(cls):
+    @classmethod#methodนีคือmethodของคลาส ไม่ต้องมีself ติดอยู่ในclassตลอด
+    def get_vehicle_type(cls):#การบอกว่าทุกวัตถุของclass สามารถ get vehicle
         """Class method to access class attributes"""
         return cls.vehicle_type
 

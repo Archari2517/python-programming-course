@@ -19,7 +19,7 @@ class Student:
     def show_courses(self):
         """Method to display all courses"""
         if self.courses:
-            return f"Courses: {', '.join(self.courses)}"
+            return f"Courses: {', '.join(self.courses)}"#เอาข้อความในlistมาjoinคั่นด้วย,
         else:
             return "No courses enrolled yet."
 
