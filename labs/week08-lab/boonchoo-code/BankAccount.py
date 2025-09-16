@@ -25,12 +25,12 @@ class BankAccount:
             return True
         return False
     
-    # Property decorator for read-only access
+    # Property decorator for read-only access ทำให้ตัวแปร .__ สามารถเข้าถึงได้ผ่านmedthodนี้
     @property
     def transaction_history(self):
         return self.__transaction_history.copy()
     
-    def __str__(self):
+    def __str__(self):#สามารถprint จากวัตถุจาก class
         return f"Account {self.account_number}: Balance ${self.__balance}"
 
 # Usage example
